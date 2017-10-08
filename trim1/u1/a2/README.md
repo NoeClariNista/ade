@@ -219,22 +219,22 @@ Dejamos al usuario root solo como localhost.
 
 También en Options File, en Networking señalamos la opción bind-address, en concreto * .
 
-![imagen61](./images/61.png)
+![imagen62](./images/62.png)
 
 # 9. Conectarse Con El Workbench Cliente Al Servidor.
 
 Ahora tenemos que volver al cliente y ponemos nuestros datos que hemos creado en el Workbench Servidor.
 
-![imagen62](./images/62.png)
+![imagen63](./images/63.png)
 
 Nos pide la contraseña que hemos creado.
 
-![imagen63](./images/63.png)
+![imagen64](./images/64.png)
 
 Finalmente nos deja entrar desde el Workbench del Cliente al Workbench del Servidor.
 
-![imagen64](./images/64.png)
+![imagen65](./images/65.png)
 
 Para probarlo podemos ver que
 
-![imagen65](./images/65.png)
+![imagen66](./images/66.png)
