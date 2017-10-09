@@ -183,6 +183,8 @@ Antes de instalar el MySQL Workbench 6.3.9, tenemos que instalar dos programas p
 
 * Lo primero que instalamos es el .NET Framework 4.5.2. Para ello nos lo descargamos de la página web de [.NET Framework 4.5.2.](https://www.microsoft.com/es-ES/download/details.aspx?id=42642) y lo instalamos como podemos ver en las siguientes imágenes.
 
+![imagen45](./images/45.png)
+
 ![imagen46](./images/46.png)
 
 ![imagen47](./images/47.png)
@@ -271,6 +273,8 @@ Ejecutamos el msi que nos descargamos del Xampp 7.1.9. y para poder hacer la ins
 
 Seguimos con las opciones por defecto.
 
+![imagen67](./images/67.png)
+
 ![imagen68](./images/68.png)
 
 ![imagen69](./images/69.png)
@@ -281,60 +285,58 @@ Seguimos con las opciones por defecto.
 
 ![imagen72](./images/72.png)
 
-Finalmente se nos ha instalado Xampp 7.1.9.
-
 ![imagen73](./images/73.png)
 
-# 13. Configuración de phpMyAdmin.
+Finalmente se nos ha instalado Xampp 7.1.9.
 
 ![imagen74](./images/74.png)
 
+# 13. Configuración de phpMyAdmin.
+
+Ahora tenemos que activar en el Xampp el Apache para poder acceder a phpMyAdmin.
+
 ![imagen75](./images/75.png)
+
+Ahora vamos a los ficheros de phpMyAdmin (estan dentro de Xampp). Aqui tenemos que modificar el archivo php que se llama config.inc.php.
 
 ![imagen76](./images/76.png)
 
+Ahora ponemos una contraseña para phpMyAdmin.
+
 ![imagen77](./images/77.png)
+
+Vamos a la ruta del Xampp, phpMyAdmin y luego sql. Ahí tenemos que entrar en create_tables.
 
 ![imagen78](./images/78.png)
 
+Ahora le damos a ejecutar y queremos que nos cree esa base de datos que nos aparece.
+
 ![imagen79](./images/79.png)
+
+Ahora creo otro usuario para phpMyAdmin.
 
 ![imagen80](./images/80.png)
 
+Luego volvemos a ir a Xampp, phpMyAdmin y tenemos que cambiar el archivo php que se llama config.inc.php.
+
 ![imagen81](./images/81.png)
+
+Lo que tenemos que hacer en ese archivo es añadir el control pass.
 
 ![imagen82](./images/82.png)
 
+Volvemos a Xampp y pinchamos en Admin de Apache y se nos abrira un navegador.
+
 ![imagen83](./images/83.png)
+
+Abrimos phpMyAdmin.
 
 ![imagen84](./images/84.png)
 
+Para comprobar que podemos conectarnos a las bases de datos que tenemos por defecto en MySQL entramos en alguna de las bases de datos por defecto.
+
 ![imagen85](./images/85.png)
 
+Ahora vamos a SQL y realizamos una consulta para ver que nos va correcto el phpMyAdmin.
+
 ![imagen86](./images/86.png)
-
-![imagen87](./images/87.png)
-
-![imagen88](./images/88.png)
-
-![imagen89](./images/89.png)
-
-![imagen90](./images/90.png)
-
-![imagen91](./images/91.png)
-
-![imagen92](./images/92.png)
-
-![imagen93](./images/93.png)
-
-![imagen94](./images/94.png)
-
-![imagen95](./images/95.png)
-
-![imagen96](./images/96.png)
-
-![imagen97](./images/97.png)
-
-![imagen98](./images/98.png)
-
-![imagen99](./images/99.png)
