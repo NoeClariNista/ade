@@ -238,3 +238,7 @@ Finalmente nos deja entrar desde el Workbench del Cliente al Workbench del Servi
 Para probarlo podemos ver que
 
 ![imagen66](./images/66.png)
+
+# 10. Servidor Web Apache.
+
+![imagen](./images/.)
