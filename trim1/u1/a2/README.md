@@ -229,13 +229,13 @@ Luego le damos el role de DBA.
 
 Dejamos al usuario root solo con localhost.
 
-![imagen59](./images/59.png)
+![imagen59](./images/59.jpg)
 
 # 9. Configuración Modo Remoto En El Servidor De MYSQL Desde Workbench.
 
 También en Options File, en Networking señalamos la opción bind-address, en concreto * .
 
-![imagen60](./images/60.jpg)
+![imagen60](./images/60.png)
 
 # 10. Conectarse Con El Workbench Cliente Al Servidor.
 
