@@ -36,7 +36,7 @@ Antes de instalar el MySQL Installer 5.7.19, tenemos que instalar dos programas 
 
 # 3. Instalación De MySQL En Windows 7 (Server).
 
-Ejecutamos el msi que nos descargamos del MySQL Installer 5.7.19 y para poder hacer la instalación solo tenemos que seguir las siguientes imágenes.
+Ejecutamos el msi que nos descargamos del MySQL Installer 5.7.19. Para poder hacer la instalación solo tenemos que seguir las siguientes imágenes.
 
 ![imagen08](./images/08.png)
 
@@ -106,7 +106,7 @@ Finalmente ya tenemos instalado el MySQL Installer 5.7.19
 
 ![imagen29](./images/29.png)
 
-Anteriormente nos dio un problema instalando el MySQL Workbench 6.3.9 (x64), lo que hacemos es instalarlo al final. Lo añadimos como que queremos instalarlo y continuamos.
+Anteriormente nos dio un problema instalando el MySQL Workbench 6.3.9 (x64), lo que hacemos es instalarlo ahora. Lo añadimos como que queremos instalarlo y continuamos.
 
 ![imagen30](./images/30.png)
 
@@ -122,7 +122,7 @@ Finalmente ya tenemos instalado el MySQL Workbench 6.3.9.
 
 ![imagen33](./images/33.png)
 
-Entramos a la línea de comandos cuando ya se nos ha instalado el MySQL 5.7.19.
+Entramos a la línea de comandos cuando ya se nos haya instalado el MySQL 5.7.19.
 
 ![imagen34](./images/34.png)
 
@@ -158,30 +158,26 @@ Ahora volvemos a nuestro Disco Local y activamos la opción de poder ver los arc
 
 ![imagen41](./images/41.jpg)
 
-Dentro de esta carpeta entramos a la carpeta de MySQL y luego a MySQL Server 5.7.
+Dentro de esta carpeta entramos a la carpeta de MySQL y luego a MySQL Server 5.7. Dentro de MySQL Server 5.7 nos encontramos con un fichero que se llama my.ini, este será el archivo de la ruta que tiene que aparecer en el MySQL Workbench 6.3.9. del Cliente.
 
 ![imagen42](./images/42.jpg)
 
-Dentro de MySQL Server 5.7 nos encontramos con un fichero que se llama my.ini, este será el archivo de la ruta que tiene que aparecer en el MySQL Workbench 6.3.9. del Cliente.
+Entramos en la carpeta Data y vemos las bases de datos que nos vienen por defecto.
 
 ![imagen43](./images/43.jpg)
 
-Entramos en la carpeta Data y vemos las bases de datos que nos vienen por defecto.
-
-![imagen44](./images/44.jpg)
-
 ___
 
 
-# 6. Descarga De MySQL Workbench En Windows 7 (Cliente).
+# 5. Descarga De MySQL Workbench En Windows 7 (Cliente).
 
 Para hacer esta instalación debemos ir a la página de MySQL y debemos  descargarnos [MySQL Workbench 6.3.9](https://dev.mysql.com/downloads/workbench/).
 
-![imagen45](./images/45.png)
+![imagen44](./images/44.png)
 
 ___
 
-# 7. Instalación Previa De MySQL Workbench En Windows 7 (Cliente).
+# 6. Instalación Previa De MySQL Workbench En Windows 7 (Cliente).
 
 Antes de instalar el MySQL Workbench 6.3.9, tenemos que instalar dos programas para poder instalarlo.
 
@@ -191,24 +187,25 @@ Antes de instalar el MySQL Workbench 6.3.9, tenemos que instalar dos programas p
 
 ![imagen47](./images/47.png)
 
-![imagen48](./images/48.png)
-
 * Lo segundo que instalamos es el Microsoft Visual C++ 2015 Redistributable (x64). Para ello nos lo descargamos de la página web de [Microsoft Visual C++ 2015](https://www.microsoft.com/es-es/download/details.aspx?id=52685) y lo instalamos como podemos ver en las siguientes imágenes.
+
+![imagen48](./images/48.png)
 
 ![imagen49](./images/49.png)
 
 ![imagen50](./images/50.png)
 
-![imagen51](./images/51.png)
 ___
 
-# 8. Instalación De MySQL Workbench En Windows 7 (Cliente).
+# 7. Instalación De MySQL Workbench En Windows 7 (Cliente).
 
 Ejecutamos el msi que nos descargamos del MySQL Workbench 6.3.9. y para poder hacer la instalación solo tenemos que seguir las siguientes imágenes.
 
-![imagen52](./images/52.png)
+![imagen51](./images/51.png)
 
 Seguimos con las opciones por defecto.
+
+![imagen52](./images/52.png)
 
 ![imagen53](./images/53.png)
 
@@ -218,63 +215,63 @@ Seguimos con las opciones por defecto.
 
 ![imagen56](./images/56.png)
 
-![imagen57](./images/57.png)
-
-# 9. Crear Usuario En El Servidor.
+# 8. Crear Usuario En El Servidor.
 
 Lo primero es crear un usuario en el Servidor, con otro nombre distinto al root, en mi caso se llama noelia, tiene una contraseña para poder acceder y también le damos como que se pueda acceder desde cualquier Cliente.
 
-![imagen58](./images/58.png)
+![imagen57](./images/57.png)
 
 Luego le damos el role de DBA.
 
-![imagen59](./images/59.png)
+![imagen58](./images/58.png)
 
 Dejamos al usuario root solo con localhost.
 
-![imagen60](./images/60.jpg)
+![imagen59](./images/59.png)
 
-# 10. Configuración Modo Remoto En El Servidor De MYSQL Desde Workbench.
+# 9. Configuración Modo Remoto En El Servidor De MYSQL Desde Workbench.
 
 También en Options File, en Networking señalamos la opción bind-address, en concreto * .
 
-![imagen61](./images/61.png)
+![imagen60](./images/60.jpg)
 
-# 11. Conectarse Con El Workbench Cliente Al Servidor.
+# 10. Conectarse Con El Workbench Cliente Al Servidor.
 
 Ahora tenemos que volver al cliente y ponemos nuestros datos que hemos creado en el Workbench Servidor.
 
-![imagen62](./images/62.png)
+![imagen61](./images/61.png)
 
 Nos pide la contraseña que hemos creado.
 
-![imagen63](./images/63.png)
+![imagen62](./images/62.png)
 
 Finalmente nos deja entrar desde el Workbench del Cliente al Workbench del Servidor.
 
-![imagen64](./images/64.png)
+![imagen63](./images/63.png)
 
 Para probarlo podemos ver que que visualizando las bases de datos que tenemos en el Servidor.
+
+![imagen64](./images/64.png)
+
+___
+
+# 11. Descarga De Xampp.
+
+Para hacer esta instalación debemos ir a la página de Xampp y debemos  descargarnos [Xampp 7.1.9](https://www.apachefriends.org/es/download.html).
 
 ![imagen65](./images/65.png)
 
 ___
 
-# 12. Descarga De Xampp.
-
-Para hacer esta instalación debemos ir a la página de Xampp y debemos  descargarnos [Xampp 7.1.9](https://www.apachefriends.org/es/download.html).
-
-![imagen66](./images/66.png)
-
-___
-
-# 13. Instalación De Xampp.
+# 12. Instalación De Xampp.
 
 Ejecutamos el msi que nos descargamos del Xampp 7.1.9. y para poder hacer la instalación solo tenemos que seguir las siguientes imágenes.
 
-![imagen68](./images/68.png)
+![imagen66](./images/66.png)
 
 Seguimos con las opciones por defecto.
+
+![imagen68](./images/68.png)
 
 ![imagen69](./images/69.png)
 
@@ -284,13 +281,13 @@ Seguimos con las opciones por defecto.
 
 ![imagen72](./images/72.png)
 
-![imagen73](./images/73.png)
-
 Finalmente se nos ha instalado Xampp 7.1.9.
 
-![imagen74](./images/74.png)
+![imagen73](./images/73.png)
 
-# 14. Configuración de phpMyAdmin.
+# 13. Configuración de phpMyAdmin.
+
+![imagen74](./images/74.png)
 
 ![imagen75](./images/75.png)
 
@@ -341,7 +338,3 @@ Finalmente se nos ha instalado Xampp 7.1.9.
 ![imagen98](./images/98.png)
 
 ![imagen99](./images/99.png)
-
-![imagen100](./images/100.png)
-
-![imagen101](./images/101.png)
