@@ -34,15 +34,15 @@ Ahora configuramos la seguridad post-instalación, para ello ejecutamos el coman
 
 ![imagen07](./images/07.png)
 
-Instalamos MYSQL Workbench.
+Instalamos MySQL Workbench.
 
 ![imagen08](./images/08.png)
 
 ---
 
-# **2. PHPMYAdmin.**
+# **2. phpMyAdmin.**
 
-Instalamos el PHPMYAdmin.
+Instalamos el phpMyAdmin.
 
 ![imagen09](./images/09.png)
 
@@ -50,7 +50,7 @@ Cuando se va instalando todo nos va a pedir que servidor web queremos utilizar, 
 
 ![imagen10](./images/10.png)
 
-Mientras se va instalando el PHPMYAdmin nos va a pedir una contraseña para la aplicación MySQL de PHPMYAdmin.
+Mientras se va instalando el phpMyAdmin nos va a pedir una contraseña para la aplicación MySQL de phpMyAdmin.
 
 ![imagen11](./images/11.png)
 
@@ -58,7 +58,7 @@ Finalmente entramos a un navegador web y ponemos localhost.
 
 ![imagen12](./images/12.png)
 
-Ahora ponemos después de localhost phpmyadmin y nos aparecerá lo siguiente.
+Ahora después de localhost ponemos phpMyAdmin y nos aparecerá lo siguiente.
 
 ![imagen13](./images/13.png)
 
@@ -70,7 +70,7 @@ Ponemos la contraseña y veremos lo siguiente.
 
 ![imagen16](./images/16.png)
 
-Dentro de la instalación de PHPMYAdmin tenemos que indicar lo siguiente:
+Dentro de la instalación de phpMyAdmin tenemos que indicar lo siguiente:
 
 * El Directorio de instalación base es el siguiente.
 
@@ -84,7 +84,7 @@ Dentro de la instalación de PHPMYAdmin tenemos que indicar lo siguiente:
 
 ![imagen19](./images/.png)
 
-* El Fichero de configuración del servidor, que es conffig.inc.php y su ubicación es la siguiente.
+* El Fichero de configuración del servidor, que es config.inc.php y su ubicación es la siguiente.
 
 ![imagen20](./images/20.png)
 
@@ -92,7 +92,7 @@ Dentro de la instalación de PHPMYAdmin tenemos que indicar lo siguiente:
 
 ![imagen21](./images/21.png)
 
-* Vemos que el usuario propietario de la instalación es
+* Vemos que el usuario propietario de la instalación es el siguiente.
 
 ![imagen22](./images/.png)
 
@@ -100,7 +100,7 @@ Dentro de la instalación de PHPMYAdmin tenemos que indicar lo siguiente:
 
 # **3. Conexión Cliente-Servidor.**
 
-Probamos la conexión al servidor, utilizando el programa cliente mysql. Para ello vamos a la consola del cliente y ponemos lo que aparece a continuación.
+Probamos la conexión al servidor, utilizando el programa mysqsl-client. Para ello vamos a la consola del cliente y ponemos lo que aparece a continuación.
 
 ![imagen23](./images/23.png)
 
