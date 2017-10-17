@@ -8,7 +8,7 @@ Instalamos MySQL Server desde el gestor de paquetes.
 
 Indicamos que versión estable se instala desde el repositorio.
 
->![imagen02](./images/.png)
+![imagen02](./images/.png)
 
 Instalamos MySQL Cliente desde el gestor de paquetes.
 
@@ -36,10 +36,36 @@ Instalamos MYSQL Workbench.
 
 Instalamos el PHPMYAdmin sobre Apache.
 
->![imagen09](./images/.png)
+![imagen09](./images/.png)
 
-Dentro de la instalación de PHPMYAdmin tenemos que indicar el Directorio de instalación base, el Directorio del servicio o proceso demonio, el  Directorio de datos, el Fichero de configuración del servidor y su ubicación, Aplicar el lenguaje de los mensajes de error a español, modificando la configuración (indicar el directorio donde se aloja el fichero en español)
+![imagen10](./images/.png)
 
-Vemos que el usuario propietario de la instalación es
+Dentro de la instalación de PHPMYAdmin tenemos que indicar lo siguiente:
+
+* El Directorio de instalación base.
+
+![imagen11](./images/.png)
+
+* El Directorio del servicio o proceso demonio.
+
+>![imagen12](./images/.png)
+
+* El Directorio de datos.
+
+![imagen13](./images/.png)
+
+* El Fichero de configuración del servidor y su ubicación.
+
+>![imagen14](./images/.png)
+
+* Aplicar el lenguaje de los mensajes de error a español, modificando la configuración, también indicamos el directorio donde se aloja el fichero en español.
+
+![imagen15](./images/.png)
+
+![imagen16](./images/.png)
+
+* Vemos que el usuario propietario de la instalación es
+
+![imagen17](./images/.png)
 
 ___
