@@ -128,4 +128,8 @@ Ponemos la contraseña de nuestro usuario creado en el servidor.
 
 ![imagen29](./images/29.png)
 
+Finalmente entramos en nuestro usuario y probamos algún comando para ver que funciona correctamente.
+
+![imagen30](./images/30.png)
+
 ___
