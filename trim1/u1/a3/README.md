@@ -22,7 +22,7 @@ Instalamos MySQL Cliente desde el gestor de paquetes.
 
 ![imagen04](./images/04.png)
 
-Reiniciamos y vemos el estado del demonio mysqld, el cual arranca el núcleo de SGBD.
+Reiniciamos el servicio de mysql y vemos el estado del demonio mysqld, el cual arranca el núcleo de SGBD.
 
 ![imagen05](./images/05.png)
 
@@ -72,17 +72,17 @@ Ponemos la contraseña y veremos lo siguiente.
 
 Dentro de la instalación de phpMyAdmin tenemos que indicar lo siguiente:
 
-* El Directorio de instalación base es el siguiente.
+* El Directorio de instalación base.
 
 ![imagen17](./images/17.png)
 
 * El Directorio del servicio o proceso demonio.
 
-![imagen18](./images/.png)
+![imagen18](./images/18.png)
 
 * El Directorio de datos.
 
-![imagen19](./images/.png)
+![imagen19](./images/19.png)
 
 * El Fichero de configuración del servidor, que es config.inc.php y su ubicación es la siguiente.
 
@@ -92,9 +92,7 @@ Dentro de la instalación de phpMyAdmin tenemos que indicar lo siguiente:
 
 ![imagen21](./images/21.png)
 
-* Vemos que el usuario propietario de la instalación es el siguiente.
-
-![imagen22](./images/.png)
+* Vemos que el usuario propietario de la instalación es mysql.
 
 ---
 
@@ -102,34 +100,34 @@ Dentro de la instalación de phpMyAdmin tenemos que indicar lo siguiente:
 
 Probamos la conexión al servidor, utilizando el programa mysqsl-client. Para ello vamos a la consola del cliente y ponemos lo que aparece a continuación.
 
+![imagen22](./images/22.png)
+
+También podemos conectarnos de forma remota Cliente-Servidor por medio del Workbench. Para ello vamos al Workbench del Servidor y añadimos la ruta del archivo de configuración global de MySQL.
+
 ![imagen23](./images/23.png)
-
-También podemos conectarnos de forma remota Cliente-Servidor por medio del Workbench. Para ello vamos al Workbench del Servidor y añadimos la ruta del archivo necesario para que funcione MySQL Workbench.
-
-![imagen24](./images/24.png)
 
 Para ello lo primero es ir al MySQL Workbench y añadir un nuevo usuario.
 
-![imagen25](./images/25.png)
+![imagen24](./images/24.png)
 
 Dicho usuario tendrá todos los roles.
 
-![imagen26](./images/26.png)
+![imagen25](./images/25.png)
 
 Luego vamos a Options File y en Networking añadimos bind-address y port.
 
-![imagen27](./images/27.png)
+![imagen26](./images/26.png)
 
 Ahora añadimos una nueva conexión desde el MySQL Workbench del cliente.
 
-![imagen28](./images/28.png)
+![imagen27](./images/27.png)
 
 Ponemos la contraseña de nuestro usuario creado en el servidor.
 
-![imagen29](./images/29.png)
+![imagen28](./images/28.png)
 
 Finalmente entramos en nuestro usuario y probamos algún comando para ver que funciona correctamente.
 
-![imagen30](./images/30.png)
+![imagen29](./images/29.png)
 
 ___
