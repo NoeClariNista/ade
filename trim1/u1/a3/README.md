@@ -126,7 +126,7 @@ Ponemos la contraseña de nuestro usuario creado en el servidor.
 
 ![imagen28](./images/28.png)
 
-Finalmente entramos en nuestro usuario y probamos algún comando para ver que funciona correctamente.
+Finalmente entramos en el servidor con el usuario creado anteriormente y probamos algún comando para ver que funciona correctamente.
 
 ![imagen29](./images/29.png)
 
