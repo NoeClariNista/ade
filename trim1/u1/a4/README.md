@@ -1,6 +1,7 @@
 ___
 
 # U1. A4. Instalación De SQL Server 2014 Express.
+
 En esta práctica realizaremos la Instalación y Configuración de SQL Server y SQL Server Management Studio.
 
 ---
@@ -45,7 +46,7 @@ Especificamos el modo de autentificación.
 
 Seleccionamos que queremos instalar y configurar.
 
-![imagen](./images/.png)
+![imagen09](./images/09.png)
 
 Finalmente comienza la instalación.
 
@@ -57,7 +58,7 @@ Se completa la instalación.
 
 ---
 
-# 2.  Comprobaciones Acceso Local.
+# 2. Comprobación Del Acceso Local.
 
 Tenemos que comprobar el acceso local desde Management Studio a la instancia de SQL Server.
 
@@ -91,7 +92,7 @@ La instalación del Management Studio puede durar varios minutos.
 
 ![imagen17](./images/17.png)
 
-Finalmente ya tenemos instalado el Management Studio.
+Finalmente ya tenemos instalado el Management Studio en el Cliente Windows 7.
 
 ![imagen18](./images/18.png)
 
@@ -113,7 +114,7 @@ Primero tenemos que poner el nombre del usuario y su contraseña.
 
 ![imagen21](./images/21.png)
 
-Le damos roles del servidor a este usuario.
+Le damos todos los roles del servidor a este usuario.
 
 ![imagen22](./images/22.png)
 
@@ -141,7 +142,7 @@ Nos aparecen los protocolos de SQLEXPRESS.
 
 ![imagen28](./images/28.png)
 
-Habilitamos los protocolos de SQLEXPRESS.
+Habilitamos todos los protocolos de SQLEXPRESS.
 
 ![imagen29](./images/29.png)
 
