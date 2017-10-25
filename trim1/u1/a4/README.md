@@ -146,6 +146,11 @@ Habilitamos todos los protocolos de SQLEXPRESS.
 
 ![imagen29](./images/29.png)
 
+Entramos a las propiedades de TCP/IP.
+
+![imagen30](./images/30.png)
+
+
 Finalmente reiniciamos el servicio de SQL Server.
 
 ![imagen30](./images/30.png)
