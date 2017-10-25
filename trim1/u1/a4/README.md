@@ -1,12 +1,12 @@
 ___
 
-# U1. A4. Instalación De SQL Server 2014 Express.
+# **U1. A4. Instalación De SQL Server 2014 Express.**
 
 En esta práctica realizaremos la Instalación y Configuración de SQL Server y SQL Server Management Studio.
 
 ---
 
-# 1. Instalaciones En El Servidor.
+# **1. Instalaciones En El Servidor.**
 
 Vamos a instalar el SQL Server Express 2014 y el Management Studio en un Servidor Windows 7.
 
@@ -44,7 +44,7 @@ Especificamos el modo de autentificación.
 
 ![imagen08](./images/08.png)
 
-Seleccionamos que queremos instalar y configurar.
+Seleccionamos que queremos Instalar y configurar.
 
 ![imagen09](./images/09.png)
 
@@ -58,7 +58,7 @@ Se completa la instalación.
 
 ---
 
-# 2. Comprobación Del Acceso Local.
+# **2. Comprobaciones Del Acceso Local.**
 
 Tenemos que comprobar el acceso local desde Management Studio a la instancia de SQL Server.
 
@@ -76,7 +76,7 @@ Finalmente nos permite conectarnos de forma local.
 
 ---
 
-# 3. Instalaciones En El Cliente.
+# **3. Instalaciones En El Cliente.**
 
 Instalamos Management Studio en un Cliente Windows 7.
 
@@ -92,13 +92,13 @@ La instalación del Management Studio puede durar varios minutos.
 
 ![imagen17](./images/17.png)
 
-Finalmente ya tenemos instalado el Management Studio en el Cliente Windows 7.
+Finalmente ya tenemos instalado el Management Studio en el Cliente.
 
 ![imagen18](./images/18.png)
 
 ---
 
-# 4. Configuración Para Acceso Remoto.
+# **4. Configuración Para Acceso Remoto.**
 
 Para poder conectarnos desde el Cliente al Servidor tenemos que cambiar unas configuraciones.
 
@@ -114,7 +114,7 @@ Primero tenemos que poner el nombre del usuario y su contraseña.
 
 ![imagen21](./images/21.png)
 
-Le damos todos los roles del servidor a este usuario.
+Le damos roles del servidor a este usuario.
 
 ![imagen22](./images/22.png)
 
@@ -142,34 +142,138 @@ Nos aparecen los protocolos de SQLEXPRESS.
 
 ![imagen28](./images/28.png)
 
-Habilitamos todos los protocolos de SQLEXPRESS.
+Habilitamos los protocolos de SQLEXPRESS.
 
 ![imagen29](./images/29.png)
 
-Entramos a las propiedades de TCP/IP.
+Luego tenemos que cambiar unas propiedades en TCP/IP.
 
 ![imagen30](./images/30.png)
 
+Habilitamos la dirección IP 172.18.20.11 en el puerto 1433.
+
+![imagen31](./images/31.png)
+
+Volvemos a los Servicios de SQL Server.
+
+![imagen32](./images/32.png)
+
+Entramos en SQL Server Browser y ponemos en Servicio su modo de inicio automático.
+
+![imagen33](./images/33.png)
+
+Ahora iniciamos este servicio.
+
+![imagen34](./images/34.png)
+
+Ahora vamos al cortafuegos del Servidor y del Cliente y tenemos que añadir nuevas reglas para que nos permita acceder por el puerto que añadimos anteriormente.
+
+Vamos a añadir nuevas reglas de entrada.
+
+Vamos a añadir regla y creamos una regla por el Puerto.
+
+![imagen35](./images/35.png)
+
+Tenemos que poner el protocolo TCP y el puerto local 1433.
+
+![imagen36](./images/36.png)
+
+Permitimos la conexión.
+
+![imagen37](./images/37.png)
+
+Ya tenemos creada la regla de entrada para el Servidor y para el Cliente.
+
+![imagen38](./images/38.png)
+
+![imagen39](./images/39.png)
+
+Vamos a añadir nuevas reglas de salida.
+
+Vamos a añadir regla y creamos una regla por el Puerto.
+
+![imagen40](./images/40.png)
+
+Tenemos que poner el protocolo TCP y el puerto local 1433.
+
+![imagen41](./images/41.png)
+
+Permitimos la conexión.
+
+![imagen42](./images/42.png)
+
+Ya tenemos creada la regla de entrada para el Servidor y para el Cliente.
+
+![imagen43](./images/43.png)
+
+![imagen44](./images/44.png)
+
+Ahora tenemos que crear otra nueva regla pero esta vez tendrá el protocolo UDP.
+
+Vamos a añadir una nueva regla de entrada.
+
+Vamos a añadir regla y creamos una regla por el Puerto.
+
+![imagen45](./images/45.png)
+
+Tenemos que poner el protocolo UDP y el puerto local 1434.
+
+![imagen46](./images/46.png)
+
+Permitimos la conexión.
+
+![imagen47](./images/47.png)
+
+Ya tenemos creada la regla de entrada para el Servidor.
+
+![imagen48](./images/48.png)
+
+Vamos a añadir una nueva regla de salida.
+
+Vamos a añadir regla y creamos una regla por el Puerto.
+
+![imagen49](./images/49.png)
+
+Tenemos que poner el protocolo UDP y el puerto local 1434.
+
+![imagen50](./images/50.png)
+
+Permitimos la conexión.
+
+![imagen51](./images/51.png)
+
+Ya tenemos creada la regla de salida para el Servidor.
+
+![imagen52](./images/52.png)
 
 Finalmente reiniciamos el servicio de SQL Server.
 
-![imagen30](./images/30.png)
+![imagen53](./images/53.png)
 
 ---
 
-# 5. Acceso Remoto.
+# **5. Acceso Remoto.**
 
 Ahora nos tenemos que conectar desde Management Studio del Cliente Windows 7 a la instancia de SQL Server del Servidor Windows 7, tanto por nombre de máquina como por IP.
 
 Abrimos el SQL Server Management Studio en el Cliente Windows 7.
-![imagen31](./images/31.png)
+
+![imagen54](./images/54.png)
 
 Introducimos el nombre del servidor, utilizando la autentificación de SQL Server, usuario y contraseña.
 
-![imagen32](./images/32.png)
+![imagen55](./images/55.png)
 
-Nos intenta conectar.
+Nos conecta al Servidor.
 
-![imagen33](./images/33.png)
+![imagen56](./images/56.png)
+
+Ahora introducimos la IP del servidor, utilizando la autentificación de SQL Server, usuario y contraseña.
+
+![imagen57](./images/57.png)
+
+Nos conecta al Servidor.
+
+![imagen58](./images/58.png)
 
 ---
