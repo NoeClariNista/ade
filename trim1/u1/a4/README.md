@@ -52,7 +52,7 @@ Finalmente comienza la instalación.
 
 ![imagen10](./images/10.png)
 
-Se completa la instalación.
+Se completa la instalación en el Servidor.
 
 ![imagen11](./images/11.png)
 
@@ -114,7 +114,7 @@ Primero tenemos que poner el nombre del usuario y su contraseña.
 
 ![imagen21](./images/21.png)
 
-Le damos roles del servidor a este usuario.
+Le damos todos los roles del servidor a este usuario.
 
 ![imagen22](./images/22.png)
 
@@ -158,7 +158,7 @@ Volvemos a los Servicios de SQL Server.
 
 ![imagen32](./images/32.png)
 
-Entramos en SQL Server Browser y ponemos en Servicio su modo de inicio automático.
+Entramos en SQL Server Browser y ponemos en Servicio su modo de inicio en Automático.
 
 ![imagen33](./images/33.png)
 
@@ -182,7 +182,7 @@ Permitimos la conexión.
 
 ![imagen37](./images/37.png)
 
-Ya tenemos creada la regla de entrada para el Servidor y para el Cliente.
+Ya tenemos creada la regla de entrada para el Servidor y para el Cliente, cada regla en su respectiva MV.
 
 ![imagen38](./images/38.png)
 
@@ -202,7 +202,7 @@ Permitimos la conexión.
 
 ![imagen42](./images/42.png)
 
-Ya tenemos creada la regla de entrada para el Servidor y para el Cliente.
+Ya tenemos creada la regla de entrada para el Servidor y para el Cliente, cada regla en su respectiva MV.
 
 ![imagen43](./images/43.png)
 
@@ -264,7 +264,7 @@ Introducimos el nombre del servidor, utilizando la autentificación de SQL Serve
 
 ![imagen55](./images/55.png)
 
-Nos conecta al Servidor.
+Nos conecta al Servidor utilizando el nombre de máquina.
 
 ![imagen56](./images/56.png)
 
@@ -272,7 +272,7 @@ Ahora introducimos la IP del servidor, utilizando la autentificación de SQL Ser
 
 ![imagen57](./images/57.png)
 
-Nos conecta al Servidor.
+Nos conecta al Servidor utilizando la IP del servidor.
 
 ![imagen58](./images/58.png)
 
