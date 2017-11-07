@@ -62,8 +62,10 @@ quick
 
 Haz la lecturas de los siguientes enlaces y responde documentando las preguntas:
 
-    "Server System Variables" http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html
-    "Using System Variables" http://dev.mysql.com/doc/refman/5.7/en/using-system-variables.html
+"Server System Variables"
+http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html
+"Using System Variables"
+http://dev.mysql.com/doc/refman/5.7/en/using-system-variables.html
 
 Si queremos guardar el resultado de una consulta SQL en un fichero de texto, debemos construir la consulta del siguiente modo, ejemplo con un SELECT utilizando INTO OUTFILE :
 
@@ -84,22 +86,33 @@ default-storage-engine=InnoDB
 
 * 1. Define qué son las variables del servidor.
 
-
+Las variables del Servidor son
 
 * 2. Usa el comando "SHOW VARIABLES" para conocer el valor de todas las variables y enviar el resultado a un fichero.
 
-
+show variables.
 
 * 3. Repite lo anterior para mostrar solo las variables relacionadas con el motor "InnoDB".
 
-
+show variables like 'InnoDB' ('%innoDB% or %innodb%')
 
 * 4. Para gestionar variables tenemos, como hemos visto, el comando SHOW "comando".
 
-      * cómo mostrar todos los motores de almacenamiento
-      * cómo mostrar el estado actual del servidor
-      * cómo averiguar todos los clientes que están conectados al servidor
-      * cómo conocer todas las tablas que están abiertas
+* cómo mostrar todos los motores de almacenamiento.
+
+  show engines.
+
+* cómo mostrar el estado actual del servidor.
+
+  show status.
+
+* cómo averiguar todos los clientes que están conectados al servidor.
+
+  show processlist.
+
+* cómo conocer todas las tablas que están abiertas.
+
+  show open tables.
 
 ---
 
@@ -107,17 +120,40 @@ default-storage-engine=InnoDB
 
 Haz la lecturas de los siguientes enlaces y responde documentando las preguntas:
 
-    "Server Status Variables" http://dev.mysql.com/doc/refman/5.7/en/server-status-variables.html
-    "SHOW STATUS Syntax" http://dev.mysql.com/doc/refman/5.7/en/show-status.html
-    "SHOW Syntax" http://dev.mysql.com/doc/refman/5.7/en/show.html
+"Server Status Variables"
+http://dev.mysql.com/doc/refman/5.7/en/server-status-variables.html
+"SHOW STATUS Syntax"
+http://dev.mysql.com/doc/refman/5.7/en/show-status.html
+"SHOW Syntax"
+http://dev.mysql.com/doc/refman/5.7/en/show.html
 
 * 1. Define qué son las variables de estado.
-* 2. Usa el comando "SHOW STATUS" para conocer el valor de todas las variables..
+
+
+
+* 2. Usa el comando "SHOW STATUS" para conocer el valor de todas las variables.
+
+show status.
+
 * 3. Haz que uno o más de tus compañeros se conecte a tu servidor (puede que por cuestión de permisos no os podáis conectar).
+
+mysql -h 172.18.20.41 -u noelia -p (78646393-dD)
+
 * 4. Comprueba quién está conectado usando el comando correspondiente (Pista: es un comando visto SHOW XYZ).
+
+show processlist
+
 * 5. Intenta desconectarlo con el comando "kill"
+
+
+
 * 6. ¿Cuántas consultas se están ejecutado hasta el momento en tu servidor MYSQL? ¿Y si se trata de consultas lentas?
+
+
+
 * 7. Un estado informa  el sobre el máximo de conexiones concurrentes que se ha dado en la sesión de trabajo. ¿Cuál es?
+
+
 
 ---
 
