@@ -153,7 +153,7 @@ show variables like '%query%'
 
 slow
 
-* 7. Un estado informa  el sobre el máximo de conexiones concurrentes que se ha dado en la sesión de trabajo. ¿Cuál es?
+* 7. Un estado informa el sobre el máximo de conexiones concurrentes que se ha dado en la sesión de trabajo. ¿Cuál es?
 
 
 
