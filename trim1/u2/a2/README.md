@@ -145,11 +145,13 @@ show processlist
 
 * 5. Intenta desconectarlo con el comando "kill"
 
-
+kill (10)
 
 * 6. ¿Cuántas consultas se están ejecutado hasta el momento en tu servidor MYSQL? ¿Y si se trata de consultas lentas?
 
+show variables like '%query%'
 
+slow
 
 * 7. Un estado informa  el sobre el máximo de conexiones concurrentes que se ha dado en la sesión de trabajo. ¿Cuál es?
 
@@ -162,8 +164,10 @@ show processlist
 Son aquellas que son modificables en tiempo de ejecución.
 Haz la lectura de los siguientes enlaces y contesta razonadamente a las preguntas:
 
-    "Dynamic System Variables" http://dev.mysql.com/doc/refman/5.7/en/dynamic-system-variables.html
-    "SET Syntax" http://dev.mysql.com/doc/refman/5.7/en/set-statement.html
+"Dynamic System Variables"
+ http://dev.mysql.com/doc/refman/5.7/en/dynamic-system-variables.html
+"SET Syntax"
+http://dev.mysql.com/doc/refman/5.7/en/set-statement.html
 
 * 1. Detalla los posibles atributos que tendría una variable de servidor como "port".
 
@@ -178,12 +182,19 @@ Max Value
 
 * 2. ¿Cómo podemos saber si una variable es dinámica o no?
 
+
+
 * 3. ¿Qué hace la variable "uptime"?
 
-        Indica su valor en tu servidor
-        ¿Es posible modificar su valor con comando SET?
+Indica su valor en tu servidor
+
+
+¿Es posible modificar su valor con comando SET?
+
 
 * 4. Localiza la variable que establece el límite de conexiones concurrentes. ¿Cuál es?
+
+
 
 Modifícala y establece un máximo de 100 conexiones concurrentes
 
