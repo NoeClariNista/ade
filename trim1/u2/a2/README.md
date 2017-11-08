@@ -20,7 +20,7 @@ Cuando queremos que las opciones sean permanentes lo normal es hacer que los pro
 
 * 2. Encuentra el fichero my.cnf de tu instalación de MySQL (podría no estar en una ubicación no estándar).
 
-Se encuentra en ``/etc/mysql/``-
+Se encuentra en `/etc/mysql/`-
 
 * 3. ¿Cómo se escribe un comentario en este fichero?¿Y un grupo de opciones?¿Todas las opciones tienen un valor?
 
@@ -90,6 +90,7 @@ Las variables del Servidor son
 
 * 2. Usa el comando "SHOW VARIABLES" para conocer el valor de todas las variables y enviar el resultado a un fichero.
 
+![imagen]()
 show variables.
 
 * 3. Repite lo anterior para mostrar solo las variables relacionadas con el motor "InnoDB".
