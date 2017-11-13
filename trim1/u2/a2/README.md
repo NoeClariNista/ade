@@ -8,27 +8,27 @@ ___
 
 ### **Ajustar Variables Con Ficheros De Opciones.**
 
-1. Haz la lectura de la siguiente página "Using Option Files".
+1. Hacemos la lectura de la siguiente página "Using Option Files".
 
 `http://dev.mysql.com/doc/refman/5.7/en/option-files.html`.
 
-2. Encuentra el fichero my.cnf de tu instalación de MySQL (podría no estar en una ubicación no estándar).
+2. Encontramos el fichero my.cnf de mi instalación de MySQL.
 
-Se encuentra en `/etc/mysql/`.
+El fichero my.cnf se encuentra en `/etc/mysql/`.
 
 ![imagen01](./images/01.png)
 
-3. ¿Cómo se escribe un comentario en este fichero?¿Y un grupo de opciones?¿Todas las opciones tienen un valor?
+3. ¿Cómo se escribe un comentario en este fichero? ¿Y un grupo de opciones? ¿Todas las opciones tienen un valor?
 
 En este fichero se escribe un comentario poniendo "#".
 
 En un grupo de opciones se escribe poniendo "[group]".
 
-4. Ejecuta "mysqld --verbose --help" desde una consola para ver una lista de las variables del servidor. Para ver mejor el texto mejor redirecciona la salida a fichero.
+4. Ejecutamos "mysqld --verbose --help" desde una consola para ver una lista de las variables del servidor.
 
 ![imagen02](./images/02.png)
 
-5. Explica qué significan y que se consigue con cada una de las variables del siguiente fichero de configuración.
+5. Explicamos qué significan y que se consigue con cada una de las variables del siguiente fichero de configuración.
 
 ~~~
 [client]
@@ -54,7 +54,7 @@ quick
 
 ## **2. Variables Del Servidor.**
 
-Haz la lecturas de los siguientes enlaces y responde documentando las preguntas.
+Hacemos la lecturas de los siguientes enlaces y respondemos documentando las preguntas.
 
 "Server System Variables"
 `http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html`.
@@ -62,19 +62,17 @@ Haz la lecturas de los siguientes enlaces y responde documentando las preguntas.
 "Using System Variables"
 `http://dev.mysql.com/doc/refman/5.7/en/using-system-variables.html`.
 
-1. Define qué son las variables del servidor.
+1. Definimos qué son las variables del servidor.
 
 Las variables del Servidor son
 
-2. Usa el comando "SHOW VARIABLES" para conocer el valor de todas las variables y enviar el resultado a un fichero.
+2. Usamos el comando "SHOW VARIABLES" para conocer el valor de todas las variables y enviamos el resultado a un fichero.
 
 ![imagen03](./images/03.png)
 
-3. Repite lo anterior para mostrar solo las variables relacionadas con el motor "InnoDB".
+3. Repetimos lo anterior para mostrar solo las variables relacionadas con el motor "InnoDB".
 
 ![imagen04](./images/04.png)
-
-show variables like 'InnoDB' ('%innoDB% or %innodb%')
 
 4. Para gestionar variables tenemos, como hemos visto, el comando SHOW "comando".
 
@@ -98,7 +96,7 @@ show variables like 'InnoDB' ('%innoDB% or %innodb%')
 
 ## **Variables De Estado.**
 
-Haz la lecturas de los siguientes enlaces y responde documentando las preguntas.
+Hacemos la lectura de los siguientes enlaces y respondemos documentando las preguntas.
 
 "Server Status Variables"
 `http://dev.mysql.com/doc/refman/5.7/en/server-status-variables.html`.
@@ -107,7 +105,7 @@ Haz la lecturas de los siguientes enlaces y responde documentando las preguntas.
 "SHOW Syntax"
 `http://dev.mysql.com/doc/refman/5.7/en/show.html`.
 
-1. Define qué son las variables de estado.
+1. Definimos qué son las variables de estado.
 
 Las variables de estado proporcionan información sobre el funcionamiento del Servidor MySQL. También proporcionan recuentos de declaraciones.
 
@@ -115,17 +113,17 @@ Las variables de estado proporcionan información sobre el funcionamiento del Se
 
 ![imagen09](./images/09.png)
 
-3. Haz que uno o más de tus compañeros se conecte a tu servidor (puede que por cuestión de permisos no os podáis conectar).
+3. Haz que uno o más de tus compañeros se conecte a tu servidor.
 
 ![imagen10](./images/10.png)
 
 ![imagen11](./images/11.png)
 
-4. Comprueba quién está conectado usando el comando correspondiente (Pista: es un comando visto SHOW XYZ).
+4. Comprobamos quién está conectado usando el comando correspondiente.
 
 ![imagen12](./images/12.png)
 
-5. Intenta desconectarlo con el comando "kill"
+5. Intentamos desconectarlo con el comando "kill"
 
 ![imagen13](./images/13.png)
 
@@ -143,7 +141,7 @@ Las variables de estado proporcionan información sobre el funcionamiento del Se
 
 ## **Variables Dinámicas.**
 
-Haz la lectura de los siguientes enlaces y contesta razonadamente a las preguntas.
+Hacemos la lectura de los siguientes enlaces y contestamos razonadamente a las preguntas.
 
 "Dynamic System Variables"
  `http://dev.mysql.com/doc/refman/5.7/en/dynamic-system-variables.html`.
@@ -166,10 +164,10 @@ La cantidad de segundos que ha estado el Servidor.
 
 Si, poniendo set global o set session.
 
-4. Localiza la variable que establece el límite de conexiones concurrentes. ¿Cuál es?
+4. Localizamos la variable que establece el límite de conexiones concurrentes. ¿Cuál es?
 
 Es concurrent_insert.
 
-Modifícala y establece un máximo de 100 conexiones concurrentes.
+Modificamos y establecemos un máximo de 100 conexiones concurrentes.
 
 ---
