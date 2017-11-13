@@ -54,7 +54,7 @@ quick
 
 ## **2. Variables Del Servidor.**
 
-Hacemos la lecturas de los siguientes enlaces y respondemos documentando las preguntas.
+Hacemos la lectura de los siguientes enlaces y respondemos documentando las preguntas.
 
 "Server System Variables"
 `http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html`.
@@ -64,7 +64,7 @@ Hacemos la lecturas de los siguientes enlaces y respondemos documentando las pre
 
 1. Definimos qué son las variables del servidor.
 
-Las variables del Servidor son
+Las variables del Servidor son las variables del sistema que se pueden configurar al inicio el servidor usando opciones en la línea de comando o en un archivo de opciones.
 
 2. Usamos el comando "SHOW VARIABLES" para conocer el valor de todas las variables y enviamos el resultado a un fichero.
 
