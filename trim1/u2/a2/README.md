@@ -24,6 +24,8 @@ En este fichero se escribe un comentario poniendo "#".
 
 En un grupo de opciones se escribe poniendo "[group]".
 
+Todas las opciones tienen un valor.
+
 4. Ejecutamos "mysqld --verbose --help" desde una consola para ver una lista de las variables del servidor.
 
 ![imagen02](./images/02.png)
@@ -56,11 +58,11 @@ quick
 
 Hacemos la lectura de los siguientes enlaces y respondemos documentando las preguntas.
 
-"Server System Variables"
-`http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html`.
+* "Server System Variables"
+  `http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html`.
 
-"Using System Variables"
-`http://dev.mysql.com/doc/refman/5.7/en/using-system-variables.html`.
+* "Using System Variables"
+  `http://dev.mysql.com/doc/refman/5.7/en/using-system-variables.html`.
 
 1. Definimos qué son las variables del servidor.
 
@@ -76,19 +78,19 @@ Las variables del Servidor son las variables del sistema que se pueden configura
 
 4. Para gestionar variables tenemos, como hemos visto, el comando SHOW "comando".
 
-* Cómo mostrar todos los motores de almacenamiento.
+* Como mostrar todos los motores de almacenamiento.
 
 ![imagen05](./images/05.png)
 
-* Cómo mostrar el estado actual del servidor.
+* Como mostrar el estado actual del servidor.
 
 ![imagen06](./images/06.png)
 
-* Cómo averiguar todos los clientes que están conectados al servidor.
+* Como averiguar todos los clientes que están conectados al servidor.
 
 ![imagen07](./images/07.png)
 
-* Cómo conocer todas las tablas que están abiertas.
+* Como conocer todas las tablas que están abiertas.
 
 ![imagen08](./images/08.png)
 
@@ -98,12 +100,14 @@ Las variables del Servidor son las variables del sistema que se pueden configura
 
 Hacemos la lectura de los siguientes enlaces y respondemos documentando las preguntas.
 
-"Server Status Variables"
-`http://dev.mysql.com/doc/refman/5.7/en/server-status-variables.html`.
-"SHOW STATUS Syntax"
-`http://dev.mysql.com/doc/refman/5.7/en/show-status.html`.
-"SHOW Syntax"
-`http://dev.mysql.com/doc/refman/5.7/en/show.html`.
+* "Server Status Variables"
+  `http://dev.mysql.com/doc/refman/5.7/en/server-status-variables.html`.
+
+* "SHOW STATUS Syntax"
+  `http://dev.mysql.com/doc/refman/5.7/en/show-status.html`.
+
+* "SHOW Syntax"
+  `http://dev.mysql.com/doc/refman/5.7/en/show.html`.
 
 1. Definimos qué son las variables de estado.
 
@@ -135,7 +139,7 @@ Las variables de estado proporcionan información sobre el funcionamiento del Se
 
 7. Un estado informa el sobre el máximo de conexiones concurrentes que se ha dado en la sesión de trabajo. ¿Cuál es?
 
-
+Es connection_errors_max_connections.
 
 ---
 
@@ -143,10 +147,11 @@ Las variables de estado proporcionan información sobre el funcionamiento del Se
 
 Hacemos la lectura de los siguientes enlaces y contestamos razonadamente a las preguntas.
 
-"Dynamic System Variables"
- `http://dev.mysql.com/doc/refman/5.7/en/dynamic-system-variables.html`.
-"SET Syntax"
-`http://dev.mysql.com/doc/refman/5.7/en/set-statement.html`.
+* "Dynamic System Variables"
+  `http://dev.mysql.com/doc/refman/5.7/en/dynamic-system-variables.html`.
+
+* "SET Syntax"
+  `http://dev.mysql.com/doc/refman/5.7/en/set-statement.html`.
 
 1. Detalla los posibles atributos que tendría una variable de servidor como "port".
 
