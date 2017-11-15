@@ -16,11 +16,11 @@ Hacemos la lectura de las siguientes páginas y respondemos a las preguntas razo
 
 1. Interrogando la bases de datos Information_schema, extrae información (atributos table_name, table_type) sobre las tablas que conforman la base de datos "sakila".
 
-
+![imagen01]
 
 2. ¿Cuál es el comando SHOW equivalente al anterior?.
 
-
+![imagen02]
 
 3. Repite lo mismo extrayendo la información sobre el esquema de una tabla en particular de la base de datos "sakila" (atributos column_name, data_type, is_nullable, column_default). Usar tabla columns.
 
