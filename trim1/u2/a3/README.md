@@ -34,4 +34,6 @@ Hacemos la lectura de las siguientes páginas y respondemos a las preguntas razo
 
 ![imagen05](,/images/05.png)
 
+Las tablas principales según mi criterio son
+
 ---
