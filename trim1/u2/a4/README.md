@@ -32,17 +32,13 @@ Miramos que ahora en la variable de errores se encuentra el server_error.log.
 
 ![imagen03](./images/03.png)
 
-Encendemos el servicio de errores.
+Reiniciamos el Servidor.
 
 ![imagen04](./images/04.png)
 
-Reiniciamos el Servidor.
-
-![imagen05](./images/05.png)
-
 Comprobamos los mensajes visualizando dicho fichero.
 
-![imagen06](./images/06.png)
+![imagen05](./images/05.png)
 
 
 3. Detén el servidor abruptamente (haz lo que sea necesario) y comprueba cómo se ha modificado dicho fichero.
