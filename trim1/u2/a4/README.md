@@ -20,6 +20,29 @@ Haz la lectura de la siguiente página y contesta a las preguntas razonadamente:
 
 2. Indica al servidor en "my.cnf" que registre los errores en un fichero llamado "server_error". Reinicia el servidor y comprueba los mensajes visualizando dicho fichero.
 
+Vamos al fichero my.cnf que se encuentra en `/etc/mysql`.
+
+![imagen01](./images/01.png)
+
+Editamos my.cnf.
+
+![imagen02](./images/02.png)
+
+Miramos que ahora en la variable de errores se encuentra el server_error.log.
+
+![imagen03](./images/03.png)
+
+Encendemos el servicio de errores.
+
+![imagen04](./images/04.png)
+
+Reiniciamos el Servidor.
+
+![imagen05](./images/05.png)
+
+Comprobamos los mensajes visualizando dicho fichero.
+
+![imagen06](./images/06.png)
 
 
 3. Detén el servidor abruptamente (haz lo que sea necesario) y comprueba cómo se ha modificado dicho fichero.
