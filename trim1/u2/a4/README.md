@@ -6,19 +6,17 @@ ___
 
 ## **Ficheros LOG: Error LOG.**
 
-El fichero "Error Log" registra problemas encontrados iniciando, ejecutando o parando mysqld.
-Lee el pdf de la UD1.- Instalación y Configuración de un SGBD, la parte 5 de  Los Ficheros LOG
-Haz la lectura de la siguiente página y contesta a las preguntas razonadamente:
+Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razonadamente.
 
 * MySQL Server Logs: `http://dev.mysql.com/doc/refman/5.7/en/server-logs.html`.
 
 * The Error Log: `http://dev.mysql.com/doc/refman/5.7/en/error-log.html`.
 
-1. Explica qué es y para qué sirve el "ERROR LOG"
+1. Explicamos qué es y para qué sirve el "ERROR LOG"
 
+Error Log contiene detalles de problemas que se dan durante el inicio y ejecución del motor de base de datos, contiene detalles del arranque y apagado del motor de MySQL, detalles del progreso de estos eventos y de errorres críticos que pueden ocurrir durante l ejecución del Servidor, si el programa mysqld nota que una tabla necesita ser revisada o reparada escribe este mensaje en el error log.
 
-
-2. Indica al servidor en "my.cnf" que registre los errores en un fichero llamado "server_error". Reinicia el servidor y comprueba los mensajes visualizando dicho fichero.
+2. Indicamos al servidor en "my.cnf" que registre los errores en un fichero llamado "server_error". Reiniciamos el servidor y comprobamos los mensajes visualizando dicho fichero.
 
 Vamos al fichero my.cnf que se encuentra en `/etc/mysql`.
 
@@ -32,30 +30,31 @@ Miramos que ahora en la variable de errores se encuentra el server_error.log.
 
 ![imagen03](./images/03.png)
 
-Reiniciamos el Servidor.
+Reiniciamos el Servidor y el Servicio MySQL.
 
 ![imagen04](./images/04.png)
 
-Comprobamos los mensajes visualizando dicho fichero.
+Comprobamos los mensajes visualizando dicho fichero, para ello realizamos alguna conexión fallida para que se vea algo en el fichero.
 
 ![imagen05](./images/05.png)
 
+![imagen06](./images/06.png)
 
-3. Detén el servidor abruptamente (haz lo que sea necesario) y comprueba cómo se ha modificado dicho fichero.
+3. Detenemos el Servidor abruptamente y comprobamos cómo se ha modificado dicho fichero.
 
+![imagen07](./images/07.png)
 
+![imagen08](./images/08.png)
 
-4. Prueba la función "perror" incluida en el directorio bin. ¿Cuál es su objeto? Puedes consultar http://dev.mysql.com/doc/refman/5.7/en/perror.html.
+4. Probamos la función "perror" incluida en el directorio bin. ¿Cuál es su objeto? Puedes consultar http://dev.mysql.com/doc/refman/5.7/en/perror.html.
 
-
+![imagen09](./images/09.png)
 
 ---
 
 ## **Ficheros LOG: General Query LOG.**
 
-El fichero "Global Query  Log" registra las conexiones establecidas por los clientes y las sentencias ejecutadas por ellos.
-
-Haz la lectura de la siguiente página y contesta a las preguntas razonadamente:
+Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razonadamente.
 
 * MySQL Server Logs: `http://dev.mysql.com/doc/refman/5.7/en/server-logs.html`.
 
@@ -67,7 +66,7 @@ set global general_global=1;
 
 1. Explica qué es y para qué sirve el "GENERAL QUERY LOG"
 
-
+General Query Log es un registro de lo que el progrmaa mysqld está realizando, el Servidor escribe información a este archivo de log cuando los Clientes se conectan y desconectan y guarda cada sentencia SQL recibida por parte de los usuarios, este registro es muy útil cuando se realiza la búsqueda de errores de un Cliente y se requiere conocer que envía este al motor de base de datos, en las líneas que se muestran que un Cliente se conecta indica el tipo de conexión que se realizó incluyendo el protocolo usado.
 
 2. Configura MySQL para registrar consultas generales en el fichero denominado "miserver.log". Comprueba su funcionamiento haciendo que un compañero se conecte a tu servidor y ejecute varias consultas.
 
