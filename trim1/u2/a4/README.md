@@ -92,6 +92,12 @@ Hacemos varias consultas y comprobamos los mensajes visualizando dicho fichero.
 
 4. Accedemos al Servidor a través de Workbench. ¿Qué se registra en "general_log"?¿Hay alguna diferencia respecto al Cliente mysql?
 
+Entramos en mysql-workbench por comandos como superusuario.
+
 ![imagen17](./images/17.png)
+
+Revisamos los Server Logs.
+
+![imagen18](./images/18.png)
 
 ---
