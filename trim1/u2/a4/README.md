@@ -14,9 +14,9 @@ Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razo
 
 1. Explicamos qué es y para qué sirve el "ERROR LOG"
 
-Error Log contiene detalles de problemas que se dan durante el inicio y ejecución del motor de base de datos, contiene detalles del arranque y apagado del motor de MySQL, detalles del progreso de estos eventos y de errorres críticos que pueden ocurrir durante l ejecución del Servidor, si el programa mysqld nota que una tabla necesita ser revisada o reparada escribe este mensaje en el error log.
+Error Log contiene detalles de problemas que se dan durante el inicio y ejecución del motor de base de datos. Contiene detalles del arranque y apagado del motor de MySQL, detalles del progreso de estos eventos y de errores críticos que pueden ocurrir durante la ejecución del Servidor. Si el programa mysqld nota que una tabla necesita ser revisada o reparada escribe este mensaje en el Error Log.
 
-2. Indicamos al servidor en "my.cnf" que registre los errores en un fichero llamado "server_error.log". Reiniciamos el Servidor y comprobamos los mensajes visualizando dicho fichero.
+2. Indicamos al Servidor en "my.cnf" que registre los errores en un fichero llamado "server_error.log". Reiniciamos el Servidor y comprobamos los mensajes visualizando dicho fichero.
 
 Vamos al fichero my.cnf que se encuentra en `/etc/mysql`.
 
@@ -50,6 +50,8 @@ Comprobamos los mensajes visualizando dicho fichero, para ello realizamos alguna
 
 ![imagen09](./images/09.png)
 
+perror nos imprime una descripción de un error que nos ha surgido en MySQL.
+
 ---
 
 ## **Ficheros LOG: General Query LOG.**
@@ -62,9 +64,9 @@ Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razo
 
 1. Explicamos qué es y para qué sirve el "GENERAL QUERY LOG"
 
-General Query Log es un registro de lo que el progrmaa mysqld está realizando, el Servidor escribe información a este archivo de log cuando los Clientes se conectan y desconectan y guarda cada sentencia SQL recibida por parte de los usuarios, este registro es muy útil cuando se realiza la búsqueda de errores de un Cliente y se requiere conocer que envía este al motor de base de datos, en las líneas que se muestran que un Cliente se conecta indica el tipo de conexión que se realizó incluyendo el protocolo usado.
+General Query Log es un registro de lo que el programa mysqld está realizando, el Servidor escribe información a este archivo de log cuando los Clientes se conectan y desconectan y guarda cada sentencia SQL recibida por parte de los usuarios, este registro es muy útil cuando se realiza la búsqueda de errores de un Cliente y se requiere conocer que envía este al motor de base de datos, en las líneas que se muestran que un Cliente se conecta indica el tipo de conexión que se realizó incluyendo el protocolo usado.
 
-2. Configuramos MySQL para registrar consultas generales en el fichero denominado "miserver.log". Comprobamos su funcionamiento haciendo que un compañero se conecte a tu servidor y ejecute varias consultas.
+2. Configuramos MySQL para registrar consultas generales en el fichero denominado "miserver.log". Comprobamos su funcionamiento haciendo que un compañero se conecte al Servidor y ejecute varias consultas.
 
 Vamos al fichero my.cnf que se encuentra en `/etc/mysql`.
 
@@ -74,7 +76,7 @@ Editamos `my.cnf`.
 
 ![imagen11](./images/11.png)
 
-Miramos que ahora en la variable se encuentra el `miserver.log`. También tenemos que poner el Servicio ON.
+Miramos que ahora en la variable se encuentra el `miserver.log`. También podemos ver que el Servicio esta ON.
 
 ![imagen12](./images/12.png)
 
@@ -90,14 +92,16 @@ Hacemos varias consultas y comprobamos los mensajes visualizando dicho fichero.
 
 ![imagen16](./images/16.png)
 
-4. Accedemos al Servidor a través de Workbench. ¿Qué se registra en "general_log"?¿Hay alguna diferencia respecto al Cliente mysql?
+4. Accedemos al Servidor a través de Workbench. ¿Qué se registra en "general_log"? ¿Hay alguna diferencia respecto al Cliente mysql?
 
 Entramos en mysql-workbench por comandos como superusuario.
 
 ![imagen17](./images/17.png)
 
-Revisamos los Server Logs.
+Revisamos los Server Logs. Los cuales registran casi la misma información que el Cliente MySQL.
 
 ![imagen18](./images/18.png)
+
+La diferencia respecto al Cliente MySQL es que en Workbench nos realiza una doble conexión del usuario.
 
 ---
