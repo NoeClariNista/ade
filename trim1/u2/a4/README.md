@@ -60,7 +60,7 @@ Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razo
 
 * The General Query Log: `http://dev.mysql.com/doc/refman/5.7/en/query-log.html`.
 
-**1.** Explicamos qué es y para qué sirve el "GENERAL QUERY LOG"
+1. Explicamos qué es y para qué sirve el "GENERAL QUERY LOG"
 
 General Query Log es un registro de lo que el progrmaa mysqld está realizando, el Servidor escribe información a este archivo de log cuando los Clientes se conectan y desconectan y guarda cada sentencia SQL recibida por parte de los usuarios, este registro es muy útil cuando se realiza la búsqueda de errores de un Cliente y se requiere conocer que envía este al motor de base de datos, en las líneas que se muestran que un Cliente se conecta indica el tipo de conexión que se realizó incluyendo el protocolo usado.
 
