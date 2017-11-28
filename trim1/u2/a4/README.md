@@ -16,17 +16,17 @@ Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razo
 
 Error Log contiene detalles de problemas que se dan durante el inicio y ejecución del motor de base de datos, contiene detalles del arranque y apagado del motor de MySQL, detalles del progreso de estos eventos y de errorres críticos que pueden ocurrir durante l ejecución del Servidor, si el programa mysqld nota que una tabla necesita ser revisada o reparada escribe este mensaje en el error log.
 
-2. Indicamos al servidor en "my.cnf" que registre los errores en un fichero llamado "server_error". Reiniciamos el Servidor y comprobamos los mensajes visualizando dicho fichero.
+2. Indicamos al servidor en "my.cnf" que registre los errores en un fichero llamado "server_error.log". Reiniciamos el Servidor y comprobamos los mensajes visualizando dicho fichero.
 
 Vamos al fichero my.cnf que se encuentra en `/etc/mysql`.
 
 ![imagen01](./images/01.png)
 
-Editamos my.cnf.
+Editamos `my.cnf`.
 
 ![imagen02](./images/02.png)
 
-Miramos que ahora en la variable de errores se encuentra el server_error.log.
+Miramos que ahora en la variable de errores se encuentra el `server_error.log`.
 
 ![imagen03](./images/03.png)
 
@@ -60,25 +60,21 @@ Hacemos la lectura de las siguientes páginas y contestamos a las preguntas razo
 
 * The General Query Log: `http://dev.mysql.com/doc/refman/5.7/en/query-log.html`.
 
-show variables like 'general_log%'
-
-set global general_global=1;
-
-1. Explica qué es y para qué sirve el "GENERAL QUERY LOG"
+1. Explicamos qué es y para qué sirve el "GENERAL QUERY LOG"
 
 General Query Log es un registro de lo que el progrmaa mysqld está realizando, el Servidor escribe información a este archivo de log cuando los Clientes se conectan y desconectan y guarda cada sentencia SQL recibida por parte de los usuarios, este registro es muy útil cuando se realiza la búsqueda de errores de un Cliente y se requiere conocer que envía este al motor de base de datos, en las líneas que se muestran que un Cliente se conecta indica el tipo de conexión que se realizó incluyendo el protocolo usado.
 
-2. Configuramos MySQL para registrar consultas generales en el fichero denominado "miserver.log". Comprueba su funcionamiento haciendo que un compañero se conecte a tu servidor y ejecute varias consultas.
+2. Configuramos MySQL para registrar consultas generales en el fichero denominado "miserver.log". Comprobamos su funcionamiento haciendo que un compañero se conecte a tu servidor y ejecute varias consultas.
 
 Vamos al fichero my.cnf que se encuentra en `/etc/mysql`.
 
 ![imagen10](./images/10.png)
 
-Editamos my.cnf.
+Editamos `my.cnf`.
 
 ![imagen11](./images/11.png)
 
-Miramos que ahora en la variable se encuentra el miserver.log. También tenemos que poner el Servicio ON.
+Miramos que ahora en la variable se encuentra el `miserver.log`. También tenemos que poner el Servicio ON.
 
 ![imagen12](./images/12.png)
 
