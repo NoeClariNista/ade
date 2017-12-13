@@ -54,7 +54,7 @@ ___
 
 13. Crear un usuario llamado “superadmin” con los privilegios anteriores y con posibilidad de conceder privilegios a otros usuarios.
 
-![]()
+![imagen13](./images/13.png)
 
 14. Quitar los privilegios al usuario “profesor_cli” para actualizar la tabla CLIENTES.
 
