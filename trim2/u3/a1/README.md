@@ -38,42 +38,42 @@ ___
 
 9. Vuelve a la ventana de root y concede derechos de consulta al usuario alumno sobre la tabla PEDIDOS. Comprueba, mediante una nueva conexión del usuario 'alumno' que tiene este nuevo acceso.
 
-
+![imagen09](./images/09.png)
 
 10. Crear un usuario llamado “profesor_cli” con los privilegios de 'profesor' y, también, los privilegios de inserción y borrado en la tabla CLIENTES.
 
-
+![imagen10](./images/10.png)
 
 11. Conecta como 'profesor_cli' y comprueba sus privilegios sobre las diferentes tablas de 'jardineria'.
 
-
+![imagen11](./images/11.png)
 
 12. Crear un usuario llamado “administrador” que tenga todos los privilegios a todas las bases de datos de nuestro servidor mysql. Este administrador no tendrá la posibilidad de dar privilegios.
 
-
+![imagen12](./images/12.png)
 
 13. Crear un usuario llamado “superadmin” con los privilegios anteriores y con posibilidad de conceder privilegios a otros usuarios.
 
-
+![]()
 
 14. Quitar los privilegios al usuario “profesor_cli” para actualizar la tabla CLIENTES.
 
-
+![]()
 
 15. Eliminar todos los privilegios al usuario 'profesor'.
 
-
+![]()
 
 16. Actualizar los privilegios.
 
-
+![]()
 
 17. Muestra los privilegios de usuario 'profesor'.
 
-
+![]()
 
 18. Consulta todos los usuarios existentes.
 
-
+![]()
 
 ---
