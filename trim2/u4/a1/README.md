@@ -20,7 +20,7 @@ Dentro de banco, creamos una tabla llamada cuentas que va a tener dos campos, n�
 
 ![imagen02](./images/02.png)
 
-Creamos un trigger que guarde en una variable, llamada saldo, el acumulativo de los valores insertados en cada una de las tuplas.
+Creamos un Trigger que guarde en una variable, llamada saldo, el acumulativo de los valores insertados en cada una de las tuplas.
 
 ![imagen03](./images/03.png)
 
@@ -36,7 +36,7 @@ Insertamos valores y comprobamos el total de saldo insertado con un select.
 
 ![imagen08](./images/08.png)
 
-Creamos también un trigger que reste cuando eliminamos una tupla.
+Creamos también un Trigger que reste cuando eliminamos una tupla.
 
 ![imagen09](./images/09.png)
 

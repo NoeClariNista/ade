@@ -15,16 +15,16 @@ CREATE TABLE cuentas(
     PRIMARY KEY(numero_de_cuenta)
     ) ENGINE = InnoDB;
 
-SET @saldo=0;
-
-select @saldo;
-
 # Crear un trigger que guarde en una variable, llamada saldo, el acumulativo de los
 # valores insertados en cada una de las tuplas.
 
 CREATE TRIGGER insertar_saldo_acumulativo AFTER INSERT ON cuentas
 FOR EACH ROW
 SET @saldo=@saldo+NEW.saldo;
+
+SET @saldo=0;
+
+select @saldo;
 
 # Insertar valores y comprobar el total de saldo insertado con un select.
 
