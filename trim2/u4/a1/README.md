@@ -1,5 +1,13 @@
 ___
 
+# **banco.sql.**
+
+El archivo banco.sql de esta práctica es el siguiente.
+
+[banco.sql](https://github.com/NoeClariNista/ade1718/blob/master/trim2/u4/a1/banco.sql)
+
+---
+
 # **Actividad Triggers En MySQL.**
 
 ---
@@ -37,13 +45,5 @@ Creamos también un trigger que reste cuando eliminamos una tupla.
 Comprobamos el total del saldo después de los borrados.
 
 ![imagen11](./images/11.png)
-
----
-
-# **Archivo .sql.**
-
-El archivo .sql de esta práctica es el siguiente.
-
-[Archivo banco.sql](https://github.com/NoeClariNista/ade1718/blob/master/trim2/u4/a1/banco.sql)
 
 ---
