@@ -11,9 +11,9 @@ use banco;
 
 CREATE TABLE cuentas(
 	numero_de_cuenta int,
-	saldo decimal(10, 2),
-	PRIMARY KEY(numero_de_cuenta)
-	) ENGINE = InnoDB;
+    saldo decimal(10, 2),
+    PRIMARY KEY(numero_de_cuenta)
+    ) ENGINE = InnoDB;
 
 SET @saldo=0;
 
