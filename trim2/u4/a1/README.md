@@ -1,6 +1,6 @@
 ___
 
-# **banco.sql.**
+# **Banco.sql.**
 
 El archivo banco.sql de esta práctica es el siguiente.
 
