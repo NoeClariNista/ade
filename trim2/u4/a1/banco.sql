@@ -10,7 +10,7 @@ use banco;
 # numero de cuenta (entero y clave primaria) y saldo (10 partes enteras y 2 partes decimales).
 
 CREATE TABLE cuentas(
-	numero_de_cuenta int,
+    numero_de_cuenta int,
     saldo decimal(10, 2),
     PRIMARY KEY(numero_de_cuenta)
     ) ENGINE = InnoDB;
