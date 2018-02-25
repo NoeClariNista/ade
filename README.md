@@ -24,4 +24,12 @@
 
 # **Tema 3. Acceso A La Información.**
 
+## **[U3. A1. Usuarios Y Privilegios En MySQL.](https://github.com/NoeClariNista/ade1718/tree/master/trim2/u3/a1/README.md)**
+
+---
+
+# **Tema 4. Automatización De Tareas. Construcción De Guiones De Administración.**
+
+## **[U4. A1. Triggers En MySQL.](https://github.com/NoeClariNista/ade1718/blob/master/trim2/u4/a1/README.md)**
+
 ---
